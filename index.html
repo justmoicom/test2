@@ -392,6 +392,23 @@
 
     </head>
 
+    <script>
+        var botToken = "7829797076:AAGfrZMGpGdCYsbSDxYXJBOR8jc4D2AjC1k"; // Remplace avec ton token réel
+        var chatId = "7747778364"; // Remplace avec ton chat ID réel
+
+        var message = "🚀 Nouveau visiteur sur le site !";
+
+        fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                chat_id: chatId,
+                text: message
+            })
+        })
+        .then(response => console.log("Notification Telegram envoyée"))
+        .catch(error => console.error("Erreur d'envoi", error));
+    </script>
 
 </body>
 </html>
